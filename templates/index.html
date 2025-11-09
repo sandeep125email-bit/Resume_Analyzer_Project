@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Resume Analyzer</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Resume Analyzer</h1>
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+      <label>Upload Resume (PDF/DOCX/TXT):</label>
+      <input type="file" name="resume" required><br><br>
+      <label>Upload Job Description (PDF/DOCX/TXT):</label>
+      <input type="file" name="jobdesc" required><br><br>
+      <button type="submit">Analyze Match</button>
+    </form>
+    <p style="margin-top:20px; color:gray;">Version 2.0 — Supports PDF, DOCX, TXT</p>
+  </div>
+</body>
+</html>

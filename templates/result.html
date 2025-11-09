@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analysis Result</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Match Score: {{ match_score }}%</h1>
+
+    <h2>✅ Common Skills</h2>
+    <ul>
+      {% for skill in common_skills %}
+        <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>❌ Missing Skills</h2>
+    <ul>
+      {% for skill in missing_skills %}
+        <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+
+    <a href="/download_report"><button>Download PDF Report</button></a>
+  </div>
+</body>
+</html>
